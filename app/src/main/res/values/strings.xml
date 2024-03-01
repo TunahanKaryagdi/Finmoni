@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Finmoni</string>
+    <string name="recent_expenses">Recent expenses</string>
+    <string name="recent_spendings">Recent spendings</string>
+    <string name="spending_chart">Spending chart</string>
+</resources>
