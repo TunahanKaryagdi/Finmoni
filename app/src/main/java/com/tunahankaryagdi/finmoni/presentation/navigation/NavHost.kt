@@ -5,6 +5,7 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import com.tunahankaryagdi.finmoni.presentation.overview.overviewScreen
+import com.tunahankaryagdi.finmoni.presentation.payments.paymentsScreen
 
 
 @Composable
@@ -21,5 +22,7 @@ fun NavigationHost(
     ){
 
         overviewScreen()
+
+        paymentsScreen()
     }
 }

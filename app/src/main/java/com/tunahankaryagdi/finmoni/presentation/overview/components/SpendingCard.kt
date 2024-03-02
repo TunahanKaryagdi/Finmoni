@@ -50,7 +50,7 @@ fun SpendingCard(
                     Text(text = "abc")
                 }
                 Text(
-                    text = "20",
+                    text = "20$",
                     style = MaterialTheme.typography.titleLarge.copy(fontWeight = FontWeight.ExtraBold)
                 )
             }

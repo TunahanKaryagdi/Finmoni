@@ -3,4 +3,12 @@
     <string name="recent_expenses">Recent expenses</string>
     <string name="recent_spendings">Recent spendings</string>
     <string name="spending_chart">Spending chart</string>
+    <string name="show_more">Show more</string>
+    <string name="done">Done</string>
+    <string name="delete">Delete</string>
+    <string name="last_payment_date">Last payment date: %s</string>
+    <string name="payments">Payments</string>
+    <string name="add_payment">Add payment</string>
+    <string name="cancel">Cancel</string>
+    <string name="create_payment">Create payment</string>
 </resources>

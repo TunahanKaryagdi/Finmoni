@@ -9,10 +9,12 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.rememberNavController
 import com.tunahankaryagdi.finmoni.presentation.navigation.NavigationHost
 import com.tunahankaryagdi.finmoni.presentation.overview.overviewRoute
+import com.tunahankaryagdi.finmoni.presentation.payments.paymentsRoute
 import com.tunahankaryagdi.finmoni.ui.theme.FinmoniTheme
 
 class MainActivity : ComponentActivity() {
@@ -22,12 +24,12 @@ class MainActivity : ComponentActivity() {
             FinmoniTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
+                    color = Color.White
                 ) {
                     val navController = rememberNavController()
                     NavigationHost(
                         navController = navController,
-                        startDestination = overviewRoute
+                        startDestination = paymentsRoute
                     )
                 }
             }
