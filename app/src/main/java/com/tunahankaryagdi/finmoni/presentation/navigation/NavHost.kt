@@ -4,6 +4,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
+import com.tunahankaryagdi.finmoni.presentation.add_payment.addPaymentScreen
 import com.tunahankaryagdi.finmoni.presentation.overview.overviewScreen
 import com.tunahankaryagdi.finmoni.presentation.payments.paymentsScreen
 
@@ -24,5 +25,7 @@ fun NavigationHost(
         overviewScreen()
 
         paymentsScreen()
+
+        addPaymentScreen()
     }
 }

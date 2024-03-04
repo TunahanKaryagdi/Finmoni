@@ -12,6 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.rememberNavController
+import com.tunahankaryagdi.finmoni.presentation.add_payment.addPaymentRoute
 import com.tunahankaryagdi.finmoni.presentation.navigation.NavigationHost
 import com.tunahankaryagdi.finmoni.presentation.overview.overviewRoute
 import com.tunahankaryagdi.finmoni.presentation.payments.paymentsRoute
@@ -29,7 +30,7 @@ class MainActivity : ComponentActivity() {
                     val navController = rememberNavController()
                     NavigationHost(
                         navController = navController,
-                        startDestination = paymentsRoute
+                        startDestination = addPaymentRoute
                     )
                 }
             }
