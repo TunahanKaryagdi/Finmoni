@@ -38,7 +38,6 @@ fun CustomDatePicker(
     ) {
         DatePicker(
             state = datePickerState,
-
         )
     }
 }

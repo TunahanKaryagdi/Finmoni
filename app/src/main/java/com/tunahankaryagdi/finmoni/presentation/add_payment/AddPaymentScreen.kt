@@ -42,8 +42,6 @@ fun AddPaymentScreen(
     modifier: Modifier = Modifier
 ) {
 
-
-
     Scaffold (
         modifier = modifier,
         topBar = {
@@ -117,7 +115,7 @@ fun AddPaymentScreenContent(
         CustomButton(
             modifier = Modifier.fillMaxWidth(),
             onClick = { isOpen = true },
-            text = "Abc"
+            text = stringResource(id = R.string.save)
         )
     }
 }

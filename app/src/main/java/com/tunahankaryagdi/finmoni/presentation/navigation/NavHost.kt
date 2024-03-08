@@ -5,8 +5,10 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import com.tunahankaryagdi.finmoni.presentation.add_payment.addPaymentScreen
+import com.tunahankaryagdi.finmoni.presentation.log_in.logInScreen
 import com.tunahankaryagdi.finmoni.presentation.overview.overviewScreen
 import com.tunahankaryagdi.finmoni.presentation.payments.paymentsScreen
+import com.tunahankaryagdi.finmoni.presentation.sign_up.signUpScreen
 
 
 @Composable
@@ -27,5 +29,9 @@ fun NavigationHost(
         paymentsScreen()
 
         addPaymentScreen()
+
+        logInScreen()
+
+        signUpScreen()
     }
 }
