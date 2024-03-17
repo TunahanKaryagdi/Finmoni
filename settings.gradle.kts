@@ -16,3 +16,12 @@ dependencyResolutionManagement {
 
 rootProject.name = "Finmoni"
 include(":app")
+include(":core:data")
+include(":core:network")
+include(":feature:login")
+include(":feature:overview")
+include(":core:designsystem")
+include(":core:ui")
+include(":feature:payments")
+include(":feature:add-payment")
+include(":feature:signup")

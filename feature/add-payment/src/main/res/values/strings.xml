@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="create_payment">Create payment</string>
+    <string name="title">Title</string>
+    <string name="price">Price</string>
+    <string name="date_format">DD/MM/YYYY</string>
+    <string name="date">Date</string>
+    <string name="save">Save</string>
+</resources>

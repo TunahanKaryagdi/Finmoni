@@ -10,7 +10,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
-import com.tunahankaryagdi.finmoni.presentation.FinmoniApp
+import com.tunahankaryagdi.finmoni.navigation.FinmoniApp
 import com.tunahankaryagdi.finmoni.ui.theme.FinmoniTheme
 
 class MainActivity : ComponentActivity() {

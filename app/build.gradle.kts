@@ -51,6 +51,13 @@ android {
 
 dependencies {
 
+    implementation(project(":feature:overview"))
+    implementation(project(":feature:login"))
+    implementation(project(":feature:signup"))
+    implementation(project(":feature:add-payment"))
+    implementation(project(":feature:payments"))
+
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)

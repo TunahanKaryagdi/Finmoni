@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="payments">Payments</string>
+    <string name="add_payment">Add payment</string>
+    <string name="done">Done</string>
+    <string name="delete">Delete</string>
+    <string name="last_payment_date">Last payment date</string>
+</resources>
