@@ -1,6 +1,9 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.hilt)
+    alias(libs.plugins.firebase)
+    kotlin("kapt")
 }
 
 android {
@@ -67,6 +70,17 @@ dependencies {
     implementation(libs.androidx.compose.ui.preview)
     implementation(libs.androidx.compose.material)
     implementation(libs.androidx.compose.material3)
+    implementation(libs.androidx.navigation.compose)
+    implementation(libs.charts)
+    
+    //Hilt
+    implementation(libs.hilt.android)
+    implementation(libs.firebase.common.ktx)
+    kapt(libs.hilt.compiler)
+
+    //Firebase
+    implementation(platform(libs.firebase.bom))
+    implementation(platform(libs.firebase.firestore))
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
@@ -76,7 +90,5 @@ dependencies {
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
 
-    implementation(libs.androidx.navigation.compose)
-    implementation(libs.charts)
 
 }

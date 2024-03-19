@@ -12,8 +12,12 @@ fun NavController.navigateToPayments(navOptions: NavOptions? = null){
     this.navigate(PAYMENTS_ROUTE,navOptions)
 }
 
-fun NavGraphBuilder.paymentsScreen(){
+fun NavGraphBuilder.paymentsScreen(
+    navigateToAddPayment: () -> Unit
+){
     composable(PAYMENTS_ROUTE){
-        PaymentsScreenRoute()
+        PaymentsScreenRoute(
+            navigateToAddPayment = navigateToAddPayment
+        )
     }
 }

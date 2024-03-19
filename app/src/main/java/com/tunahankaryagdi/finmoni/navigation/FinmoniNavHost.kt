@@ -5,6 +5,7 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import com.tunahankaryagdi.add_payment.addPaymentScreen
+import com.tunahankaryagdi.add_payment.navigateToAddPayment
 import com.tunahankaryagdi.login.logInScreen
 import com.tunahankaryagdi.overview.overviewScreen
 import com.tunahankaryagdi.payments.paymentsScreen
@@ -26,7 +27,9 @@ fun FinmoniNavHost(
 
         overviewScreen()
 
-        paymentsScreen()
+        paymentsScreen(
+            navigateToAddPayment = {navController.navigateToAddPayment()}
+        )
 
         addPaymentScreen()
 

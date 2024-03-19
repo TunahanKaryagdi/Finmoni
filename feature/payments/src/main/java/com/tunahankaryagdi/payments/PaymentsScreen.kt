@@ -19,14 +19,19 @@ import com.tunahankaryagdi.ui.PaymentCard
 
 @Composable
 fun PaymentsScreenRoute(
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    navigateToAddPayment: () -> Unit
 ) {
-    PaymentsScreen(modifier = modifier)
+    PaymentsScreen(
+        modifier = modifier,
+        navigateToAddPayment = navigateToAddPayment
+    )
 }
 
 @Composable
 fun PaymentsScreen(
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    navigateToAddPayment: () -> Unit
 ) {
 
 
@@ -41,7 +46,10 @@ fun PaymentsScreen(
             )
         },
         floatingActionButton = {
-            FinmoniFloatingActionButton(onClick = {}, text = stringResource(R.string.add_payment))
+            FinmoniFloatingActionButton(
+                onClick = {navigateToAddPayment()},
+                text = stringResource(R.string.add_payment)
+            )
         }
     ){
         PaymentsScreenContent(modifier = Modifier.padding(it))

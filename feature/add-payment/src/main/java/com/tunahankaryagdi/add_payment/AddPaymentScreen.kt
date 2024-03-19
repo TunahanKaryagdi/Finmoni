@@ -18,6 +18,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
+import androidx.hilt.navigation.compose.hiltViewModel
 import com.tunahankaryagdi.designsystem.components.FinmoniButton
 import com.tunahankaryagdi.designsystem.components.FinmoniDatePicker
 import com.tunahankaryagdi.designsystem.components.FinmoniTextField
@@ -30,7 +31,8 @@ import java.util.Locale
 
 @Composable
 fun AddPaymentScreenRoute(
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    viewModel: AddPaymentViewModel = hiltViewModel()
 ) {
     AddPaymentScreen(modifier = modifier)
 }
